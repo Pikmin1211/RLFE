@@ -1,0 +1,50 @@
+# windows stuff
+*.lnk
+
+# rom stuff
+*.gba
+*.sav
+*.sgm
+*.ss1
+*.ss2
+*.ss3
+*.ss4
+*.ss5
+*.ss6
+*.ss7
+*.ss8
+*.ss9
+
+# built stuff
+*.sym
+*.ups
+*.lyn.event
+*.o
+
+# python stuff
+__pycache__/
+
+# project files
+*.sublime-project
+*.sublime-workspace
+*.tiled-project
+*.tiled-session
+
+# compiled stuff
+
+# chax
+CHAX/src/event/*
+CHAX/src/obj/*
+CHAX/Installer.event
+
+# sprites
+Spritans/MapSprites/dmp/*
+Spritans/MapSprites/Installer.event
+
+# maps
+Maps/dmp/*
+Maps/event/*
+Maps/Installer.event
+
+# events
+Events/Installer.event

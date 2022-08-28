@@ -1,0 +1,81 @@
+{
+EventPointerTable(0x7, PointerList)
+
+ALIGN 4
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	
+	END_MAIN
+
+LocationBasedEvents:
+	LOCA 3 [13, 9] 0x11 // seize
+	CHES 0 0 [14, 8] 0x14 // chest
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	UNIT 0x1 0x2 0x0 Level(1, Ally, 0) [12, 10] 0 0 0 0 [0x9, 0x6C] [0]
+	UNIT 0x2 0x7 0x0 Level(1, Ally, 0) [11, 11] 0 0 0 0 [0x1, 0x17] [0]
+	UNIT
+
+EnemyUnits:
+	UNIT 0x68 0x3F 0x0 Level(4, Enemy, 0) [3, 10] 0 0 0 0 [0x20] [0]
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 Units1
+	ENUN
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	CALL $591F40
+	SVAL 0x3 0x69
+	GIVEITEMTO 0x1
+	ENDA
+
+EndingScene:
+	MNC2 1
+	ENDA
+}
