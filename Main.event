@@ -18,6 +18,10 @@ ORG 0x1000000
 #define Enemy 2
 #define Level(level,side,autoLevel) level*8+side*2+autoLevel
 
+#include "Tables/Definitions.event"
+
+#include "Tables/Init.event"
+#include "Tables/Installer.event"
 #include "Maps/Installer.event"
 #include "CHAX/Installer.event"
 #include "Events/Installer.event"

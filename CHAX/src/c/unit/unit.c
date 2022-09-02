@@ -1,6 +1,7 @@
 #include "gbafe.h"
 #include "random/hash.h"
 #include "unit/unit.h"
+#include "Definitions.event"
 
 #define Cavalier 0x5
 #define Knight 0x9

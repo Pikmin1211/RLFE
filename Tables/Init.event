@@ -1,0 +1,57 @@
+// File output by TableJSON
+// Do not edit!
+
+ALIGN 4
+CharacterTable:
+#incbin "json/Character/Table.dmp"
+
+PUSH
+ORG 0x10108
+POIN CharacterTable
+ORG 0x104ec
+POIN CharacterTable
+ORG 0x10538
+POIN CharacterTable
+ORG 0xa0b40
+POIN CharacterTable
+ORG 0xa0bb8
+POIN CharacterTable
+ORG 0xa0e54
+POIN CharacterTable
+ORG 0xa1680
+POIN CharacterTable
+ORG 0xa18d0
+POIN CharacterTable
+ORG 0xa1a88
+POIN CharacterTable
+ORG 0xa1b84
+POIN CharacterTable
+ORG 0xa1dd8
+POIN CharacterTable
+ORG 0xa1f5c
+POIN CharacterTable
+ORG 0xa242c
+POIN CharacterTable
+ORG 0xa2aa8
+POIN CharacterTable
+ORG 0xa3630
+POIN CharacterTable
+ORG 0xa3720
+POIN CharacterTable
+ORG 0xaa738
+POIN CharacterTable
+ORG 0xb6ec8
+POIN CharacterTable
+ORG 0xb71d0
+POIN CharacterTable
+ORG 0xbd2e8
+POIN CharacterTable
+ORG 0xbe954
+POIN CharacterTable
+ORG 0x17d64
+POIN CharacterTable + (0x34 * -1)
+ORG 0x17ef0
+POIN CharacterTable + (0x34 * -1)
+ORG 0x19478
+POIN CharacterTable + (0x34 * -1)
+POP

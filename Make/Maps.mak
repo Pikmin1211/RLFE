@@ -2,7 +2,7 @@
 MapInstaller = $(Maps)/Installer.event
 
 # Python
-tmx2ea = $(Tools)/Python/tmx2ea.py
+tmx2ea = $(Tools)/Python/tmx2ea/tmx2ea.py
 FilesToInstaller = $(Tools)/Python/FilesToInstaller.py
 
 # tmx to event and dmp rule

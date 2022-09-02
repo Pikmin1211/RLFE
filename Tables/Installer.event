@@ -1,0 +1,7 @@
+// File output by FilesToInstaller
+// Do not edit!
+
+#include "event/Character/Player/Eirika.event"
+
+#include "event/Character/Player/Seth.event"
+

@@ -3,7 +3,7 @@ src := $(CHAX)/src
 src_Include := $(CHAX)/include
 CLib := $(CHAX)/FE-CLib
 clib_Include := $(CLib)/include
-CHAXInstaller = $(CHAX)/Installer.event
+CHAXInstaller := $(CHAX)/Installer.event
 
 # Lyn
 LYN := $(Tools)/Lyn/lyn
@@ -13,7 +13,7 @@ LYN_REFERENCE := $(CHAX)/Definitions.o
 include $(DEVKITARM)/base_tools
 
 # Include Flags
-INCLUDE_DIRS := $(clib_Include) $(src_Include)
+INCLUDE_DIRS := $(clib_Include) $(src_Include) $(Tables)
 INCFLAGS := $(foreach dir, $(INCLUDE_DIRS), -I "$(dir)")
 
 # Compilation Flags
