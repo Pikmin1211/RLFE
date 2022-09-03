@@ -1,5 +1,5 @@
 # ROMs
-Target_ROM := FE8_hack.gba
+Target_ROM := RLFE.gba
 Source_ROM := FE8_clean.gba
 
 # Directories
